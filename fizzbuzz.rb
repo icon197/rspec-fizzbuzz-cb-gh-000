@@ -1,7 +1,7 @@
 # Don't forget! This file needs to be 'required' in its spec file
 # See README.md for instructions on how to do this
 def fizzbuzz(val)
-  res = nil
+  res = ""
   if val % 3 == 0
     res += "Fizz"
   end
@@ -10,5 +10,5 @@ def fizzbuzz(val)
     res += "Buzz"
   end
 
-  return res
+  return res == "" ? nil : res
 end
